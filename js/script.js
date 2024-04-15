@@ -1,6 +1,10 @@
-// Function to handle toggle
 function toggleContent(event) {
-	const toggleIcon = event.target; // The element that was clicked (icon)
+	const clickedElement = event.target; // The element that was clicked
+
+	// Check if clicked element is the icon or its parent (heading)
+	const toggleIcon = clickedElement.classList.contains('toggle-icon')
+		? clickedElement
+		: clickedElement.querySelector('.toggle-icon');
 	const heading = toggleIcon.parentNode; // The h2 element
 	const contentElement = heading.nextElementSibling; // The next sibling (content div)
 
@@ -14,11 +18,11 @@ function toggleContent(event) {
 	}
 }
 
-// Attach the toggle event handler to all toggle icons
+// Attach the toggle event handler to all headings with toggle icons
 document.querySelectorAll('.toggle-icon').forEach(function (icon) {
 	// Initially hide the content under each heading
 	icon.parentNode.nextElementSibling.style.display = 'none';
 
-	// Add event listener for click event
-	icon.addEventListener('click', toggleContent);
+	// Add event listener for click event (target the parent h2)
+	icon.parentNode.addEventListener('click', toggleContent);
 });
