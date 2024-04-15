@@ -1,0 +1,51 @@
+body {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 880px;
+    margin: 0 auto; /* Centering the body */
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    font-size: large;
+}
+
+#profile-photo {
+    border-radius: 50%; /* Circular profile photo */
+    width: 200px; /* Set profile photo width */
+    display: block; /* Ensure it's a block element */
+    margin: 20px auto; /* Center profile photo */
+}
+
+.education-icon {
+    font-size: 30px;
+    margin-bottom: 10px; /* Add some spacing below the icon */
+}
+
+.school-header {
+    line-height: 0.5;
+}
+.listview{
+    line-height: 1.5;
+}
+
+li{
+    margin: 20px;   
+    text-align: left;
+}
+
+.subtoggle {
+    font-size: x-large;
+    color: rgb(0, 0, 105);
+}
+
+#communication{
+    font-weight: bold;
+}
+
+dl{
+    width: 50;
+    margin-left: 30%;
+    text-align: left;
+    
+}
