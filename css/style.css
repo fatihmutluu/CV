@@ -49,3 +49,15 @@ dl{
     text-align: left;
     
 }
+
+#education{
+    width: 600px;
+    margin: 0 auto;
+}
+
+#educ-title{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 105);
+}
